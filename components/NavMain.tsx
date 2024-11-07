@@ -8,7 +8,7 @@ const NavMain = () => {
               Eco  Solution<sup className='py-3'>ph</sup>  
             </div>
             {/**
-             * will use Navigation Menu
+             * will use Navigation Menu for Departments and Services
              * See reference on https://ui.shadcn.com/docs/components/navigation-menu
              */}
             <div className='flex mx-6 justify-center items-center font-bold gap-5'>
