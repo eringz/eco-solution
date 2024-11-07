@@ -5,14 +5,17 @@ import Product from "@/app/models/Product";
 
 // FUNCTION TO GET ALL PRODUCTS FROM MONGODB
 export async function GET(req: Request) {
-    try {
-        await connectMongo();
-        const products = await Product.find();
-        return new NextResponse(JSON.stringify(products), { status: 200 });
+    // try {
+    //     await connectMongo();
+    //     const products = await Product.find();
+    //     return new NextResponse(JSON.stringify(products), { status: 200 });
 
-    } catch (error) {
-        return new NextResponse(`Error in fetching products ${error}`)
-    }
+    // } catch (error) {
+    //     return new NextResponse(`Error in fetching products ${error}`)
+    // }
+    await connectMongo();
+    const products = await Product.find();
+    return new NextResponse(JSON.stringify(products), {status: 200});
     
 }
 
