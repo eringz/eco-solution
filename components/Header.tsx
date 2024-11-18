@@ -3,7 +3,7 @@ import NavSub from "./NavSub"
 
 const Header = () => {
     return (
-        <header>
+        <header className="">
             <NavMain />
             <NavSub />
         </header>
